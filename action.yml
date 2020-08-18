@@ -1,0 +1,8 @@
+name: 'Current NPM Package Version'
+description: 'Get the current version in package.json'
+outputs:
+  current-version:
+    description: 'Current package version from package.json'
+runs:
+  using: 'node12'
+  main: 'index.js'

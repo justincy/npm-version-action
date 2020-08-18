@@ -1,0 +1,20 @@
+{
+  "name": "npm-current-version-action",
+  "version": "1.0.0",
+  "description": "GitHub action to get the current version from package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justincy/npm-current-version-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justincy/npm-current-version-action/issues"
+  },
+  "homepage": "https://github.com/justincy/npm-current-version-action#readme"
+}
