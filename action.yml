@@ -1,5 +1,8 @@
 name: 'Current NPM Package Version'
 description: 'Get the current version in package.json'
+branding:
+  icon: hash
+  color: blue
 outputs:
   current-version:
     description: 'Current package version from package.json'
