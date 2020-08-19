@@ -1,6 +1,6 @@
 {
   "name": "npm-current-version-action",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "GitHub action to get the current version from package.json",
   "main": "index.js",
   "scripts": {
