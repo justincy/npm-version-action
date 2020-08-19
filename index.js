@@ -1,8 +1,9 @@
 const {execSync} = require('child_process');
 const {version} = require('./package.json');
 
-console.log(execSync('pwd'));
-console.log(execSync('ls -al'));
+console.log('pwd:', execSync('pwd').toString());
+console.log(execSync('ls -al').toString());
+console.log(execSync('ls -al ..').toString());
 
 if (version) {
   console.log(`::set-output name=version::${version}`);
