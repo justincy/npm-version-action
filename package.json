@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/justincy/npm-current-version-action/issues"
   },
-  "homepage": "https://github.com/justincy/npm-current-version-action#readme"
+  "homepage": "https://github.com/justincy/npm-current-version-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4"
+  }
 }

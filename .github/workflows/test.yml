@@ -9,6 +9,7 @@ jobs:
       
       # Try getting the current version
       - uses: actions/checkout@v2
+      - run: npm i
       - uses: ./
         id: current
       - run: echo '${{ steps.current.outputs.version }}'
@@ -17,7 +18,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: 1.0.0
+          path: one
       - uses: ./
         id: one
+        with:
+          path: one
       - run: echo '${{ steps.one.outputs.version }}'
       

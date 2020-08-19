@@ -1,9 +1,11 @@
+const core = require('@actions/core');
 const {resolve} = require('path');
-const {version} = require(resolve('./package.json'));
+
+const path = core.getInput('path');
+const {version} = require(resolve(path, './package.json'));
 
 if (version) {
-  console.log(`::set-output name=version::${version}`);
+  core.setOutput('version', version);
 } else {
-  console.error('no version found');
-  process.exit(1);
+  core.setFailed('No version found');
 }

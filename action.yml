@@ -3,6 +3,11 @@ description: 'Get the current version in package.json'
 branding:
   icon: hash
   color: blue
+inputs:
+  path:
+    description: 'Path of the package.json'
+    required: false
+    default: .
 outputs:
   version:
     description: 'Current package version from package.json'
