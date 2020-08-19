@@ -9,9 +9,9 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - run: pwd
+    - run: echo '::debug ${pwd}'
       shell: bash
-    - run: ls -al
+    - run: echo '::debug ${ls -al}''
       shell: bash
     - run: 'node index.js'
       shell: bash
