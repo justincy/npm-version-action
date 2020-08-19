@@ -1,0 +1,23 @@
+name: Test
+on: [push]
+
+jobs:
+  build:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      
+      # Try getting the current version
+      - uses: actions/checkout@v2
+      - uses: ./
+        id: current
+      - run: echo '${{ steps.current.outputs.version }}'
+      
+      # Try getting the version of a tag
+      - uses: actions/checkout@v2
+        with:
+          ref: 1.0.0
+      - uses: ./
+        id: one
+      - run: echo '${{ steps.one.outputs.version }}'
+      

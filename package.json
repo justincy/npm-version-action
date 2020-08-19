@@ -1,7 +1,7 @@
 {
-  "name": "npm-current-version-action",
+  "name": "npm-version-action",
   "version": "2.0.1",
-  "description": "GitHub action to get the current version from package.json",
+  "description": "GitHub action to get the version from package.json",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

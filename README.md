@@ -1,2 +1,3 @@
-# npm-current-version-action
-GitHub action to get the current version from package.json
+# npm-version-action
+
+GitHub action to get the version from package.json.
