@@ -7,11 +7,5 @@ outputs:
   version:
     description: 'Current package version from package.json'
 runs:
-  using: 'composite'
-  steps:
-    - run: echo '::debug ${pwd}'
-      shell: bash
-    - run: echo '::debug ${ls -al}''
-      shell: bash
-    - run: 'node index.js'
-      shell: bash
+  using: 'node12'
+  main: 'index.js'
